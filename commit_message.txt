@@ -1,1 +1,1 @@
-Update API endpoints
+Fix: Remove base path for deployment
