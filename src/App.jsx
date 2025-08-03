@@ -114,7 +114,7 @@ function App() {
   }, []);
 
   const fetchStablecoinPrices = async () => {
-    const response = await axios.get('http://localhost:3001/api/stablecoin-prices');
+    const response = await axios.get('https://stablecoin-converter.onrender.com/api/stablecoin-prices');
     const prices = {};
     const data = response.data;
 
@@ -175,7 +175,7 @@ function App() {
   };
 
   const fetchGoldPrice = async () => {
-    const response = await axios.get('http://localhost:3001/api/gold-price');
+    const response = await axios.get('https://stablecoin-converter.onrender.com/api/gold-price');
     return response.data.price;
   };
 
