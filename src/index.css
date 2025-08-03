@@ -1,0 +1,77 @@
+/* index.css */
+/* Tailwind 기본 지시어 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 전체 배경 및 폰트 */
+body {
+  @apply bg-[#F8FAFC] font-sans text-[#1F2937];
+}
+
+/* 링크 스타일 */
+a {
+  @apply font-medium text-[#14B8A6] underline underline-offset-2 transition-colors;
+}
+a:hover {
+  @apply text-[#00A495];
+}
+
+/* 헤딩, 본문, 보조 텍스트 */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold text-[#1F2937];
+}
+h1 {
+  font-size: 20px;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.text-sub {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+/* 카드, 입력, 버튼 등 주요 UI 요소 */
+.card {
+  @apply bg-white rounded-2xl shadow-md p-6 max-w-md w-full mx-auto;
+}
+.input {
+  @apply w-full px-3 py-3 border border-[#E5E7EB] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#14B8A6] focus:border-[#14B8A6] text-lg font-medium text-[#1F2937] bg-white transition;
+}
+.button-primary {
+  @apply w-full py-3 bg-[#00A495] text-white rounded-lg font-medium hover:bg-[#00857A] transition-colors;
+}
+
+/* 결과 카드 */
+.result-card {
+  @apply bg-white rounded-lg shadow-sm p-6 text-center max-w-md w-full mx-auto;
+}
+
+/* 컨테이너 패딩 */
+.container {
+  @apply px-4;
+}
+
+/* 그리드 간격 */
+.grid-gap {
+  @apply gap-4;
+}
+
+/* 그림자 */
+.shadow-sm {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* 모서리 둥글기 */
+.rounded-lg {
+  border-radius: 16px;
+}
+.rounded-2xl {
+  border-radius: 24px;
+}
